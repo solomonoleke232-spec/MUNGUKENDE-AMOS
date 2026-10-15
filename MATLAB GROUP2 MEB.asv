@@ -1,0 +1,66 @@
+clear
+clc
+ % Matlab Assignment Number 1
+ % Student information
+Student_Detail = 1
+Name = "MUNGUKENDE AMOS"
+Course = "MEB"
+Age = "22"
+Tribe = "ALUR"
+Association = "NUSA"
+Religion = "CATHOLIC"
+District = "ZOMBO"
+Friend = "OKELLO ISAAC"
+Hall = "OGOOLA"
+Student_Detail = 2
+Name = "ATUGONZA SHANITA"
+Course = "MEB"
+Age = "20"
+Tribe = "BANYANKOLE"
+Association = "BUBASA"
+Religion = "PENTACOSTAL"
+District = "MBARARA"
+Friend = "CHEMONGES RONNEY"
+Hall = "NJUKI"
+Student_Detail = 3
+Name = "MUMBERE DAVID WINNER"
+Course = "MEB"
+Age = "21"
+Tribe = "LANGO"
+Association = "NUSA"
+Religion = "CATHOLIC";
+District = "LIRA";
+Friend = "KERE FRANCIS";
+Hall = "NYERERE";
+Student_Detail = 4;
+Name = "KAAKA ELVIS";
+Course = "MEB";
+Age = "23";
+Tribe = "LANGO";
+Religion = "CATHOLIC";
+District = "LIRA";
+Friend = "ODONGO HARON";
+Hall = "OGOOLA";
+Student_Detail = 5;
+Name = "AINOMUGISHA PROMISE";
+Course = "MEB";
+Age = "22";
+Tribe = "BAGANDA";
+Association = "BABASA";
+Religion = "PENTACOSTAL";
+District = "KAMPALA";
+Friend = "KANYAGO TRACY";
+Hall = "AC";
+% PART B
+Table = readtable("Data.xlsx");
+% PART C
+writetable(Table,'MatlabGroup5.xlsx')
+% PART D
+
+bar(Table.AGE);
+xlabel('student');
+ylabel('AGE');
+title('Age of the five students');
+grid on;
+ % Save plot
+saveas(gcf,'student_age_plot.png');
